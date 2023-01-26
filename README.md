@@ -2,11 +2,11 @@
 To just clone the source code, use the following.
 ```bash
 git clone git@github.com:MatteoCeregini/quad-wavelet-tree.git
+cd quad-wavelet-tree
+mkdir build
 ```
 If you want to run the test for quad vectors, please continue with the following commands.
 ```bash
-cd quad-wavelet-tree
-mkdir build
 cd build
 cmake ..
 make -j test_qvector
@@ -14,8 +14,6 @@ make -j test_qvector
 ```
 If you want to run the test for quad wavelet trees, please continue with the following commands.
 ```bash
-cd quad-wavelet-tree
-mkdir build
 cd build
 cmake ..
 make -j create_dataset
