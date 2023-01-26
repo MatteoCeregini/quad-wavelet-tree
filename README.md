@@ -9,8 +9,8 @@ cd quad-wavelet-tree
 mkdir build
 cd build
 cmake ..
-make -j test_qvectors
-./test_qvectors
+make -j test_qvector
+./test_qvector
 ```
 If you want to run the test for quad wavelet trees, please continue with the following commands.
 ```bash
