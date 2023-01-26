@@ -23,6 +23,6 @@ make -j test_qwm
 ```
 `create_dataset` reads a text file, maps it to a sequence of integers, and serializes it to disk:
 * `PATH_TO_TEXT` is the path to the text you want to use in the test (something like `/texts/english.txt`).
-* `PATH_TO_DATASET` is the path to the serialized sequence created by `create_dataset` (for example `/texts/english.bin).
+* `PATH_TO_DATASET` is the path to the serialized sequence created by `create_dataset` (for example `/texts/english.bin`).
 
 The resulting file is then used by `create_dataset`.
