@@ -48,3 +48,17 @@ make -j test_qwm
 * `PATH_TO_DATASET` is the path to the serialized sequence created by `create_dataset` (for example `/texts/english.bin`).
 
 The resulting file is then used by `create_dataset`.
+
+
+Please cite the following paper if you use this code.
+
+```
+@misc{QWT,
+  author = {Matteo Ceregini, Florian Kurpicz, Rossano Venturini},
+  title = {Faster Wavelet Trees with Quad Vectors},
+  publisher = {arXiv},
+  year = {2023},
+  doi = {...},
+  url = {...}
+}
+```
