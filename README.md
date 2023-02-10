@@ -49,9 +49,8 @@ make -j test_qwm
 
 The resulting file is then used by `create_dataset`.
 
-
-Please cite the following paper if you use this code.
 ----
+Please cite the following paper if you use this code.
 ```
 @misc{QWT,
   author = {Matteo Ceregini, Florian Kurpicz, Rossano Venturini},
