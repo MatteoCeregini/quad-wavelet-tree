@@ -7,12 +7,12 @@ This makes them an important building block for compressed full-text indices, wh
 
 Using a wavelet tree requires $n\lceil\log \sigma \rceil (1+o(1))$ bits of space for a text of length $n$ over an alphabet of size $\sigma$. Access, rank, and select queries can be answered in time $O(\log\sigma)$ time.
 
-This repository provides a fast implementation of Wavelet Trees in C++. A companion Rust implementation is available [here](https://github.com/rossanoventurini/WaveletTree).
+This repository provides a fast implementation of **wavelet matrices** in C++, since they are in practice faster than wavelet trees. A companion Rust implementation is available [here](https://github.com/rossanoventurini/WaveletTree).
 
 To improve query performance, our implementation uses a  4-ary tree instead of a binary tree as basis of the wavelet tree. The 4-ary tree layout of a wavelet tree helps to halve the number of cache misses during queries and thus reduces the query latency. Our experimental evaluation shows that our 4-ary wavelet tree can improve the latency of access, rank and select queries by factor of $\approx$ 2 compared to other implementations of wavelet trees contained in the widely used Succinct Data Structure Library ([SDSL](https://github.com/simongog/sdsl-lite)). For more details, see [Benchmarks](#bench) and the paper [[2](#bib)])).
 
 ## <a name="bench">Benchmarks</a>
-Note that in fact we compare **wavelet matrices** as those are faster in practice as wavelet trees. All the experiments are performed using a single thread on a server machine with 8 Intel~i9-9900KF cores with base frequencies of 3.60 GHz running Linux 5.19.0. Each core has a dedicated L1 cache of size 32 KiB, a dedicated L2 cache of size 256 KiB, a shared L3 cache of size 16 MiB, and 64 GiB of RAM.
+All the experiments are performed using a single thread on a server machine with 8 Intel~i9-9900KF cores with base frequencies of 3.60 GHz running Linux 5.19.0. Each core has a dedicated L1 cache of size 32 KiB, a dedicated L2 cache of size 256 KiB, a shared L3 cache of size 16 MiB, and 64 GiB of RAM.
 The code is compiled with GCC 12.2.0 using the highest optimization setting (i.e., flags *-O3 -march=native -DNDEBUG -flto*).
 A more detailed experimental evaluation can be found in [[2](#bib)]). 
 
