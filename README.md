@@ -16,10 +16,6 @@ All the experiments are performed using a single thread on a server machine with
 The code is compiled with GCC 12.2.0 using the highest optimization setting (i.e., flags *-O3 -march=native -DNDEBUG -flto*).
 A more detailed experimental evaluation can be found in [[2](#bib)]. 
 
-## <a name="bib">Bibliography</a>
-1. Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. *High-order entropy-compressed text indexes.* In SODA, pages 841–850. ACM/SIAM, 2003.
-2. Matteo Ceregini, Florian Kurpicz, Rossano Venturini. *Faster Wavelet Trees with Quad Vectors*. Arxiv, 2023.
-
 ### Building the code
 To just clone the source code, use the following.
 ```bash
@@ -48,6 +44,10 @@ make -j test_qwm
 * `PATH_TO_DATASET` is the path to the serialized sequence created by `create_dataset` (for example `/texts/english.bin`).
 
 The resulting file is then used by `create_dataset`.
+
+## <a name="bib">Bibliography</a>
+1. Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. *High-order entropy-compressed text indexes.* In SODA, pages 841–850. ACM/SIAM, 2003.
+2. Matteo Ceregini, Florian Kurpicz, Rossano Venturini. *Faster Wavelet Trees with Quad Vectors*. Arxiv, 2023.
 
 ----
 Please cite the following paper if you use this code.
