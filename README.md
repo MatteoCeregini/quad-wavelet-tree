@@ -1,5 +1,5 @@
 
-# C++ 4-ary Wavelet Tree
+# C++ Quad Wavelet Tree
 
 Wavelet trees[[1](#bib)] are a self-indexing rank and select data structure, i.e., they can answer *rank* (how often does a symbol occur in a prefix of length $i$) and *select* (where does a symbol occur for the $i$-th time) queries, while still allowing to *access* the text.
 
