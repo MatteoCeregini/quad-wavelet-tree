@@ -20,7 +20,7 @@ A more detailed experimental evaluation can be found in [[2](#bib)].
 1. Roberto Grossi, Ankur Gupta, and Jeffrey Scott Vitter. *High-order entropy-compressed text indexes.* In SODA, pages 841–850. ACM/SIAM, 2003.
 2. Matteo Ceregini, Florian Kurpicz, Rossano Venturini. *Faster Wavelet Trees with Quad Vectors*. Arxiv, 2023.
 
-### tl;dr
+### Building the code
 To just clone the source code, use the following.
 ```bash
 git clone git@github.com:MatteoCeregini/quad-wavelet-tree.git
