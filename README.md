@@ -7,7 +7,7 @@ This makes them an important building block for compressed full-text indices, wh
 
 Using a wavelet tree requires $n\lceil\log \sigma \rceil (1+o(1))$ bits of space for a text of length $n$ over an alphabet of size $\sigma$. Access, rank, and select queries can be answered in time $O(\log\sigma)$ time.
 
-This repository provides a fast implementation of **wavelet matrices** in C++, since they are in practice faster than wavelet trees. A companion Rust implementation is available [here](https://github.com/rossanoventurini/WaveletTree).
+This repository provides a fast implementation of **wavelet matrices** in C++, since they are in practice faster than wavelet trees. A companion **Rust implementation** is available [here](https://github.com/rossanoventurini/qwt/).
 
 To improve query performance, our implementation uses a  4-ary tree instead of a binary tree as basis of the wavelet tree. The 4-ary tree layout of a wavelet tree helps to halve the number of cache misses during queries and thus reduces the query latency. Our experimental evaluation shows that our 4-ary wavelet tree can improve the latency of access, rank and select queries by factor of $\approx$ 2 compared to other implementations of wavelet trees contained in the widely used Succinct Data Structure Library ([SDSL](https://github.com/simongog/sdsl-lite)). For more details, see [Benchmarks](#bench) and the paper [[2](#bib)].
 
