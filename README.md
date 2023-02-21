@@ -53,14 +53,16 @@ The resulting file is then used by `create_dataset`.
 2. Matteo Ceregini, Florian Kurpicz, Rossano Venturini. *Faster Wavelet Trees with Quad Vectors*. Arxiv, 2023.
 
 ----
-Please cite the following paper if you use this code.
+Please cite the following [paper](http://arxiv.org/abs/2302.09239) if you use this code.
+
 ```
 @misc{QWT,
   author = {Matteo Ceregini, Florian Kurpicz, Rossano Venturini},
   title = {Faster Wavelet Trees with Quad Vectors},
   publisher = {arXiv},
   year = {2023},
-  doi = {...},
-  url = {...}
+  doi = {10.48550/ARXIV.2302.09239},
+  url = {http://arxiv.org/abs/2302.09239}
 }
 ```
+
